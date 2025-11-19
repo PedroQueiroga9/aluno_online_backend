@@ -10,6 +10,12 @@ services:
       MYSQL_DATABASE: aluno_online_backendp4
       MYSQL_USER: user
       MYSQL_PASSWORD: 123
+      command: --default-authentication-plugin=mysql_native_password
+        --init-file /docker-entrypoint-initdb.d/init.sql
+      volumes:
+        -- ./init.sql:/docker-entrypoint-initdb.d/init.sql
+
+
     ports:
       - "3307:3306"  # porta do host:porta do container
     volumes:
@@ -19,6 +25,7 @@ services:
       interval: 10s
       timeout: 5s
       retries: 5
+
 
 volumes:
   mysql_data:
