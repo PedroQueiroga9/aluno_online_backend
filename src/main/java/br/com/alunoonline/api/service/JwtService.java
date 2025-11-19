@@ -17,7 +17,7 @@ import java.util.function.Function;
 @Service
 public class JwtService {
 
-    //  Chave secreta forte 
+    //  Chave secreta forte
     private static final String SECRET_KEY = "6A573B784E75513D3E614A645267556B5970337336763979244226452948404D";
 
     public String extractUsername(String token) {
