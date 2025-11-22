@@ -1,1 +1,0 @@
-ALTER TABLE matricula_aluno ADD COLUMN situacao VARCHAR(30);

@@ -1,1 +1,0 @@
-ALTER TABLE aluno ADD COLUMN situacao VARCHAR(30);
